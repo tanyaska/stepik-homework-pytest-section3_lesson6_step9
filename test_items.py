@@ -5,7 +5,7 @@ def test_guest_should_see_button_add_to_basket(browser):
     try:
         browser.get(link)
         time.sleep(30)
-        browser.find_element_by_css_selector(".btn.btn-lg")
+        browser.find_element_by_css_selector("button.btn.btn-lg")
         found = True
     except:
         found = False
